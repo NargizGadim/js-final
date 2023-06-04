@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/scss/main.css" />
     <title>Document</title>
-</head>
-<body>
-    <!-- Salam -->
-</body>
+  </head>
+  <body>
+    <main>
+      <!-- start header  -->
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="logo">
+              <a href="./index.html">
+                <div class="logoIcon">
+                  <img src="./assets/images/logo.png" alt="icon" />
+                </div>
+              </a>
+            </div>
+            <nav class="nav">
+              <ul class="navList">
+                <li class="navListItems">
+                  <a href="#">Home</a>
+                </li>
+                <li class="navListItems">
+                  <a href="#">Projects</a>
+                </li>
+                <li class="navListItems">
+                  <a href="#">About</a>
+                </li>
+                <li class="navListItems">
+                  <a href="#">Events</a>
+                </li>
+                <li class="navListItems">
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="navRight">
+              <!--  -->
+              <div class="pp" onclick="openCard()">
+                <img
+                  src="./assets/images/profile_picture.png"
+                  alt="profile_picture"
+                />
+              </div>
+              <div class="card">
+                <ul class="iconList">
+                  <li class="iconListItems">
+                    <img
+                      src="./assets/images/profile_picture.png"
+                      alt="card_img"
+                    />
+                  </li>
+                  <li class="iconListItems">Nargiz Gadimova</li>
+                  <li class="iconListItems">
+                    <a href="mailto:gadimova.nargiz@gmail.com"
+                      >gadimova.nargiz@gmail.com</a
+                    >
+                  </li>
+                  <li class="iconListItems">Settings</li>
+                  <li class="iconListItems">Log Out</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header  -->
+      <!-- start home section -->
+      <section class="homeSection"></section>
+      <!-- end home section -->
+      <section class="projectsSection"></section>
+      <section class="aboutSection"></section>
+      <section class="eventsSection"></section>
+      <section class="contactSection"></section>
+
+      <footer class="footer"></footer>
+    </main>
+
+    <script src="./assets/app.js"></script>
+  </body>
 </html>
