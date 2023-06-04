@@ -19,11 +19,22 @@
 
 .active {
   display: block !important;
-  position: absolute;
-  z-index: 9999999;
+  z-index: 6 !important;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  position: fixed;
+  display: none;
+  z-index: 5;
 }
 
 .header {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
   padding-top: 20px;
 }
 .header .container .row {
@@ -31,6 +42,8 @@
 }
 .header .container .row .logo a .logoIcon img {
   width: 100px;
+  box-shadow: 0 0 5px 5px lightblue;
+  border-radius: 10px;
 }
 .header .container .row .nav .navList {
   height: 50px;
@@ -40,9 +53,15 @@
   justify-content: center;
 }
 .header .container .row .nav .navList .navListItems :hover {
-  color: rgb(45, 148, 173);
+  color: rgb(6, 0, 63);
+  text-shadow: 0 0 12px lightblue;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 21px;
+  font-weight: 1000;
+}
+.header .container .row .nav .navList .navListItems a {
+  color: rgb(1, 1, 75);
+  font-size: 20px;
 }
 .header .container .row .navRight .pp {
   padding-right: 100px;
@@ -50,14 +69,18 @@
 .header .container .row .navRight .pp img {
   width: 50px;
   border-radius: 50px;
+  box-shadow: 0 0 5px 5px lightblue;
 }
 .header .container .row .navRight .card {
   background-color: rgb(45, 148, 173);
   margin-left: -90px;
   padding: 10px;
+  margin-top: 10px;
   border-radius: 20px;
   display: none;
-  position: relative;
+  text-shadow: 0 0 12px lightblue;
+  box-shadow: 0 0 10px 10px lightblue;
+  z-index: 600 !important;
 }
 .header .container .row .navRight .card .iconList {
   display: flex;
@@ -68,4 +91,48 @@
 .header .container .row .navRight .card .iconList .iconListItems img {
   width: 45px;
   border-radius: 50px;
+}
+
+.homeSection {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.homeSection .container .row {
+  padding-top: 150px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.homeSection .container .row .title {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.homeSection .container .row .title h1 {
+  color: rgb(6, 0, 63);
+  text-align: center;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+  font-size: 50px;
+}
+.homeSection .container .row .title p {
+  color: rgb(6, 0, 63);
+  text-align: center;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+  font-size: 40px;
+}
+.homeSection .container .row .picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.homeSection .container .row .picture img {
+  width: 400px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px 10px lightblue;
 }/*# sourceMappingURL=main.css.map */

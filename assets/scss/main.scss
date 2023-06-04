@@ -1,11 +1,11 @@
 // Global styles
+@import "./base";
 
 // Components
-@import "./base";
+@import "./header";
 @import "./home";
 @import "./projects";
 @import "./about";
 @import "./events";
 @import "./contact";
 @import "./footer";
-@import "./header";

@@ -1,27 +1,11 @@
-// let displayCard = document.querySelector("#card");
-// displayCard.addEventListener("click", () => {
-//   document.querySelector("#card").style = "display: block;";
-// });
-
-let isOpen = false;
+let isOpen = true;
 function openCard() {
-  const card = document.querySelector(".card");
-// card.classList.add(".active")
-
-  card.classList.toggle("active");
+  document.querySelector(".card").classList.toggle("active");
+  document.querySelector(".overlay").classList.toggle("active");
+  if (isOpen) {
+    document.querySelector(".overlay").onclick = () => {
+      document.querySelector(".card").classList.remove("active");
+      document.querySelector(".overlay").classList.remove("active");
+    };
+  }
 }
-// openCard();
-
-// function openCard() {
-//   document.querySelector(".card").classList.add("active");
-// }
-// openCard();
-
-
-
-// function openCard(){
-//     const card = document.querySelector(".card");
-//     const overlay = document.querySelector(".overlay");
-//     card.classList.toggle("active");
-//     overlay.classList.toggle("")
-//   }
