@@ -4,7 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -17,16 +17,23 @@
   display: flex;
 }
 
-.active{
+.active {
   display: block !important;
   z-index: 6 !important;
 }
 
-.overlay{
+.overlay {
   width: 100%;
   height: 100vh;
   background: transparent;
   position: fixed;
   display: none;
-  z-index: 5;
+}
+
+.scrolled{
+  background-color: rgb(227, 243, 248) !important;
+}
+
+body{
+  background-color: rgb(215, 233, 240);
 }

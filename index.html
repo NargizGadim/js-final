@@ -6,11 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- swiper css -->
+    <!-- font size -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- font size -->
+    <!-- my css -->
     <link rel="stylesheet" href="./assets/scss/main.css" />
+    <!-- my css -->
     <title>Document</title>
   </head>
   <body>
@@ -46,7 +56,6 @@
               </ul>
             </nav>
             <div class="navRight">
-              <!--  -->
               <div class="pp" onclick="openCard()">
                 <img
                   src="./assets/images/profile_picture.png"
@@ -78,6 +87,7 @@
       <!-- end header  -->
       <!-- start home section -->
       <section class="homeSection">
+        <div class="overlay"></div>
         <div class="container">
           <div class="row">
             <div class="title">
@@ -85,21 +95,58 @@
               <p>I think you will enjoy my presentation</p>
             </div>
             <div class="picture">
-              <img src="./assets/images/Screenshot_2.png" alt="title_photo">
+              <img src="./assets/images/Screenshot_2.png" alt="title_photo" />
             </div>
           </div>
         </div>
-        <div class="overlay"></div>
       </section>
       <!-- end home section -->
-      <section class="projectsSection"></section>
+      <!-- start projects section -->
+      <section class="projectsSection">
+        <div class="container">
+          <div class="row">
+            <div class="projectTitle">
+              <h2>There are my Projects</h2>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/images/page_one.png" alt="page_one" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/page_two.png" alt="page_two" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/page_three.png" alt="page_three" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/page_four.png" alt="page_four" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/page_five.png" alt="page_five" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/page_six.png" alt="page_six" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- Swiper -->
+          </div>
+        </div>
+      </section>
+      <!-- end projects section -->
       <section class="aboutSection"></section>
       <section class="eventsSection"></section>
       <section class="contactSection"></section>
-
+      <!-- start footer -->
       <footer class="footer"></footer>
+      <!-- end footer -->
     </main>
-
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
     <script src="./assets/app.js"></script>
   </body>
 </html>

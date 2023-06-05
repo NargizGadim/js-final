@@ -1,8 +1,11 @@
 .header {
-  position: absolute;
-  z-index: 5;
   width: 100%;
-  padding-top: 20px;
+  padding: 15px 0 15px;
+  position: fixed;
+  z-index: 10;
+  background-color:rgba(65, 94, 107, 0.5);
+  box-shadow: 0 0 12px lightblue;
+  transition: background-color 0.4s ease-in-out;
   .container {
     .row {
       justify-content: space-around;
@@ -11,7 +14,7 @@
           .logoIcon {
             img {
               width: 100px;
-              box-shadow:  0 0 5px 5px lightblue;
+              box-shadow: 0 0 5px 5px lightblue;
               border-radius: 10px;
             }
           }
@@ -45,7 +48,7 @@
           img {
             width: 50px;
             border-radius: 50px;
-            box-shadow:  0 0 5px 5px lightblue;
+            box-shadow: 0 0 5px 5px lightblue;
           }
         }
         .card {
@@ -56,8 +59,8 @@
           border-radius: 20px;
           display: none;
           text-shadow: 0 0 12px lightblue;
-          box-shadow:  0 0 10px 10px lightblue;
-          z-index: 600 !important;
+          box-shadow: 0 0 10px 10px lightblue;
+          position: absolute;
           .iconList {
             display: flex;
             flex-direction: column;

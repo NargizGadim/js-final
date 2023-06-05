@@ -1,0 +1,28 @@
+.projectsSection {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .container {
+    .row {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      .projectTitle {
+        h2 {
+          color: rgb(6, 0, 63);
+          text-shadow: 0 0 10px rgb(255, 255, 255);
+        }
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
