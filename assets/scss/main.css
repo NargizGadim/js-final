@@ -189,7 +189,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 300px;
+  gap: 200px;
 }
 .aboutSection .container .row .aboutContent .aboutImg img {
   width: 400px;
@@ -223,4 +223,45 @@ body {
   border-radius: 10px;
   display: none;
   background-color: rgb(45, 148, 173);
+}
+
+.contactSection {
+  padding-top: 100px;
+}
+.contactSection .container .row {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.contactSection .container .row .title h3 {
+  color: rgb(6, 0, 63);
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.contactSection .container .row .contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactSection .container .row .contactForm .formItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.contactSection .container .row .contactForm .formItem input {
+  width: 400px;
+  height: 30px;
+}
+.contactSection .container .row .contactForm button {
+  width: 200px;
+  height: 30px;
+  background: #3ea8eb;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 30px;
+  box-shadow: 0 0 10px 10px lightblue;
+  transition: 0.3s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
