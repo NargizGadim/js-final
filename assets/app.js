@@ -1,4 +1,3 @@
-
 let isOpen = true;
 function openCard() {
   document.querySelector(".card").classList.toggle("active");
@@ -13,9 +12,8 @@ function openCard() {
 
 document.addEventListener("scroll", () => {
   const header = document.querySelector("header");
-
   // document.querySelector("header").classList.toggle("scrolled");
-
+  // console.log(window.scrollY)
   if (window.scrollY > 0) {
     header.classList.add("scrolled");
   } else {
@@ -41,3 +39,14 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
   },
 });
+
+// about section 
+function selectTab(tabIndex) {
+  //Hide All Tabs
+  document.querySelector("#tab1Content").style.display = "none";
+  document.querySelector("#tab2Content").style.display = "none";
+  //Show the Selected Tab
+  document.getElementById("tab" + tabIndex + "Content").style.display =
+  "block";
+  
+}

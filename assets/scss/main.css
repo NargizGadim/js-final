@@ -17,6 +17,11 @@
   display: flex;
 }
 
+h2 {
+  color: rgb(6, 0, 63);
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
 .active {
   display: block !important;
   z-index: 6 !important;
@@ -159,14 +164,63 @@ body {
   align-items: center;
   gap: 50px;
 }
-.projectsSection .container .row .projectTitle h2 {
-  color: rgb(6, 0, 63);
-  text-shadow: 0 0 10px rgb(255, 255, 255);
-}
 .projectsSection .container .row .swiper {
   width: 100%;
   height: 100%;
 }
 .projectsSection .container .row .swiper .swiper-slide img {
   width: 100%;
+}
+
+.aboutSection {
+  background-image: url(../images/about_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+.aboutSection .container .row {
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+.aboutSection .container .row .aboutContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+}
+.aboutSection .container .row .aboutContent .aboutImg img {
+  width: 400px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px 10px lightblue;
+}
+.aboutSection .container .row .aboutContent .tab {
+  width: 500px;
+}
+.aboutSection .container .row .aboutContent .tab .tabName {
+  text-align: center;
+  float: left;
+  padding: 5px 10px 5px 10px;
+  background: #3ea8eb;
+  color: #ffffff;
+  margin: 0px 5px 0px 5px;
+  border-radius: 5px;
+  border: #126497 2px solid;
+  cursor: pointer;
+}
+.aboutSection .container .row .aboutContent .tab :hover {
+  box-shadow: 0 0 10px 10px lightblue;
+  color: #126497;
+  transition: 0.3s ease-in-out;
+}
+.aboutSection .container .row .aboutContent .tab .tabContent {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px 10px lightblue;
+  border-radius: 10px;
+  display: none;
+  background-color: rgb(45, 148, 173);
 }/*# sourceMappingURL=main.css.map */

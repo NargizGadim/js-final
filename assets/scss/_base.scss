@@ -17,6 +17,11 @@
   display: flex;
 }
 
+h2 {
+  color: rgb(6, 0, 63);
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
 .active {
   display: block !important;
   z-index: 6 !important;
@@ -37,3 +42,11 @@
 body{
   background-color: rgb(215, 233, 240);
 }
+
+// .tabName{
+//   :hover{
+//     box-shadow: 0 0 10px 10px lightblue;
+//     color: #126497;
+//     background-color: #000000;
+// }
+// }
